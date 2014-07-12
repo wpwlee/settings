@@ -1,0 +1,15 @@
+[core]
+	excludesfile = /Users/Webber/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Webber Lee
+	email = webber@maicoin.com
+[alias]
+	stash-unapply = !git stash show -p | git apply -R
+	unstage = reset HEAD --
+	discard = checkout --
